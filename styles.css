@@ -137,17 +137,19 @@ body {
   border-color: var(--color-soft-gold);
 }
 
-/* NAVBAR LOGO */
-.navbar-logo {
-  height: 50px;
-  width: auto;
-  object-fit: contain;
+.btn.btn-login {
+  border-color: var(--color-soft-gold);
+  background-color: var(--color-soft-gold);
+  color: white;
+  font-weight: 500;
+  transition: var(--transition-smooth);
+  border-radius: 999px;
+  width: 90px;
 }
 
-.navbar-brand {
-  display: flex;
-  align-items: center;
-  padding: 0;
+.btn.btn-login:hover {
+  background-color: var(--color-dark-gold);
+  border-color: var(--color-dark-gold);
 }
 
 /* Main */
@@ -225,7 +227,7 @@ body {
 
 /* CAROUSEL BASE */
 .carousel-slide {
-  height: 60vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
