@@ -181,7 +181,7 @@ body {
 }
 
 .hero h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: clamp(1rem, 5vw, 3rem);
   font-weight: 600;
   margin-bottom: 1rem;
   color: var(--color-ivory);
@@ -214,16 +214,21 @@ body {
 .glass-card {
   padding: 3rem 4rem;
   max-width: 700px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+  background: rgba(0, 0, 0, 0.642);
+
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.35),
+    inset 0 1px 1px rgba(255, 255, 255, 0.25);
+
   position: relative;
   z-index: 1;
   text-align: center;
 }
+
 
 /* CAROUSEL BASE */
 .carousel-slide {
@@ -567,4 +572,65 @@ footer {
 /* Footer */
 .contact-section {
   padding: 6rem 0;
+}
+.site-footer {
+  font-size: 13px;
+  color: var(--color-light-gray);
+  background-color: var(--color-charcoal-black);
+}
+
+/* Titles */
+.footer-title {
+  color: var(--color-ivory);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Lists */
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-list a {
+  color: #9ca3af;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-list a:hover {
+  color: #6366f1;
+}
+
+/* Description */
+.footer-description {
+  max-width: 240px;
+  color: var(--color-light-gray);
+  font-size: 0.9rem;
+}
+
+/* Social icons */
+.footer-socials a {
+  color: #9ca3af;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-socials a:hover {
+  color: #6366f1;
+  transform: translateY(-2px);
+}
+
+/* Badge tweak */
+.badge {
+  font-size: 10px;
+  padding: 0.3em 0.5em; 
+}
+.logo.footer-logo{
+  text-decoration: none;
 }
